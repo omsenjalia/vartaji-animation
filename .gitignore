@@ -6,6 +6,7 @@ node_modules/
 graphify-out/
 reels/**/review/
 reels/**/frames/
+reels/**/chunks/
 reels/**/final*.mp4
 reels/**/audio/*.wav
 reels/**/audio/shots/

@@ -100,8 +100,8 @@ wsl -e bash -lc "cd '/mnt/c/Users/Om Senjalia/Desktop/vartaji animation' && GL=s
 # 2. Inspect generated stills: verify face lighting, mudra hands, authentic posture, and background visibility.
 # 3. If any visual flaws appear, refine geometry or lighting in engine/zach/lib/* and re-render.
 
-# 4. Render the full 30 FPS H.264 video reel
-wsl -e bash -lc "cd '/mnt/c/Users/Om Senjalia/Desktop/vartaji animation' && GL=swiftshader node engine/zach/render.mjs video reels/v<NN>-p<MM>/out.mp4"
+# 4. Render the full 30 FPS H.264 video reel in resilient 10s chunks (with auto-resume and lossless concat)
+wsl -e bash -lc "cd '/mnt/c/Users/Om Senjalia/Desktop/vartaji animation' && GL=swiftshader node engine/zach/render.mjs chunks reels/v<NN>-p<MM>/out.mp4 10"
 ```
 
 ### Phase 7: Deterministic Character Voice Synthesis & Muxing

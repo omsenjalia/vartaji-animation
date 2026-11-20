@@ -55,6 +55,68 @@ if (mode === 'stills') {
     fs.writeFileSync(path.join(b, `t_${t.toFixed(2).padStart(6, '0')}.png`), await shot());
     console.log('still', t, Date.now() - t0, 'ms');
   }
+} else if (mode === 'chunks') {
+  // Render in resilient 10s chunks with instant checkpoint resume
+  const fps = Number(process.env.FPS || 30);
+  const dur = await page.evaluate(() => window.DURATION);
+  const chunkSize = Number(b || 10); // default 10s chunks
+  const finalOut = path.resolve(a);
+  const chunksDir = path.join(path.dirname(finalOut), 'chunks');
+  fs.mkdirSync(chunksDir, { recursive: true });
+
+  const chunkFiles = [];
+  const totalChunks = Math.ceil(dur / chunkSize);
+  let chunkIdx = 0;
+
+  for (let from = 0; from < dur; from += chunkSize) {
+    chunkIdx++;
+    const to = Math.min(from + chunkSize, dur);
+    const chunkName = `chunk_${String(Math.round(from)).padStart(3, '0')}_${String(Math.round(to)).padStart(3, '0')}.mp4`;
+    const chunkPath = path.join(chunksDir, chunkName);
+    chunkFiles.push(chunkPath);
+
+    if (fs.existsSync(chunkPath) && fs.statSync(chunkPath).size > 50000) {
+      console.log(`[Chunk ${chunkIdx}/${totalChunks}] ${chunkName} already exists (${(fs.statSync(chunkPath).size / (1024*1024)).toFixed(2)} MB) - skipping.`);
+      continue;
+    }
+
+    console.log(`\n=== Rendering [Chunk ${chunkIdx}/${totalChunks}] ${chunkName} (${from}s to ${to}s) ===`);
+    const n0 = Math.round(from * fps), n1 = Math.floor(to * fps);
+    const ff = spawn(FFMPEG, [
+      '-y', '-v', 'error', '-f', 'image2pipe', '-framerate', String(fps),
+      '-c:v', 'png', '-i', '-', '-c:v', 'libx264', '-preset', 'fast',
+      '-crf', '18', '-pix_fmt', 'yuv420p', '-r', String(fps), chunkPath,
+    ], { stdio: ['pipe', 'inherit', 'inherit'] });
+
+    const T0 = Date.now();
+    for (let n = n0; n < n1; n++) {
+      await page.evaluate(t => window.renderAt(t), n / fps);
+      const buf = await shot();
+      if (!ff.stdin.write(buf)) await new Promise(r => ff.stdin.once('drain', r));
+      if (n % 30 === 0) {
+        const pct = Math.round(((n - n0) / (n1 - n0)) * 100);
+        console.log(`  frame ${n}/${n1} (${pct}%) ${((Date.now() - T0) / (n - n0 + 1)).toFixed(0)} ms/frame`);
+      }
+    }
+    ff.stdin.end();
+    await new Promise(r => ff.on('close', r));
+    console.log(`[Chunk ${chunkIdx}/${totalChunks} COMPLETE] ${chunkName} saved (${(fs.statSync(chunkPath).size / (1024*1024)).toFixed(2)} MB) in ${((Date.now() - T0) / 1000).toFixed(1)}s`);
+  }
+
+  // Concatenate all chunks losslessly
+  console.log(`\n=== Assembling all ${chunkFiles.length} chunks into ${finalOut} ===`);
+  const listFile = path.join(chunksDir, 'concat_list.txt');
+  const listContent = chunkFiles.map(f => `file '${f.replace(/\\/g, '/')}'`).join('\n');
+  fs.writeFileSync(listFile, listContent);
+
+  await new Promise((res, rej) => {
+    const ff = spawn(FFMPEG, [
+      '-y', '-v', 'error', '-f', 'concat', '-safe', '0', '-i', listFile,
+      '-c', 'copy', finalOut
+    ], { stdio: 'inherit' });
+    ff.on('close', code => code === 0 ? res() : rej(new Error('ffmpeg concat failed: ' + code)));
+  });
+  console.log(`\n[SUCCESS] Final reel assembled: ${finalOut} (${(fs.statSync(finalOut).size / (1024*1024)).toFixed(2)} MB)`);
 } else if (mode === 'video') {
   const fps = Number(process.env.FPS || 30);
   const dur = await page.evaluate(() => window.DURATION);
@@ -91,7 +153,7 @@ if (mode === 'stills') {
     console.log('muxed', out);
   }
 } else {
-  console.error('modes: stills | video | mux');
+  console.error('modes: stills | chunks | video | mux');
 }
 
 await browser.close();
