@@ -34,8 +34,8 @@ def load_character_voice(char_id: str):
 def main():
     parser = argparse.ArgumentParser(description="Generate deterministic multi-character VO for Vartaji reel")
     parser.add_argument("reel_dir", type=str, help="Path to reel directory, e.g. reels/intro-gokulnath")
-    parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu", help="Device to run inference on (cuda/cpu)")
-    parser.add_argument("--fp16", action="store_true", default=True, help="Use FP16 for reduced VRAM")
+    parser.add_argument("--device", type=str, default="cpu", help="Device to run inference on (cpu/cuda)")
+    parser.add_argument("--fp16", action="store_true", default=False, help="Use FP16 for reduced VRAM")
     parser.add_argument("--token", type=str, default=os.environ.get("HF_TOKEN"), help="Hugging Face access token (hf_...)")
     args = parser.parse_args()
 
@@ -113,11 +113,21 @@ def main():
         if torch.cuda.is_available():
             torch.cuda.manual_seed_all(shot_seed)
 
-        input_ids = description_tokenizer(char_voice["prompt"], return_tensors="pt").input_ids.to(args.device)
-        prompt_input_ids = tokenizer(text, return_tensors="pt").input_ids.to(args.device)
+        desc_inputs = description_tokenizer(char_voice["prompt"], return_tensors="pt")
+        prompt_inputs = tokenizer(text, return_tensors="pt")
+
+        input_ids = desc_inputs.input_ids.to(args.device)
+        attention_mask = desc_inputs.attention_mask.to(args.device)
+        prompt_input_ids = prompt_inputs.input_ids.to(args.device)
+        prompt_attention_mask = prompt_inputs.attention_mask.to(args.device)
 
         with torch.no_grad():
-            generation = model.generate(input_ids=input_ids, prompt_input_ids=prompt_input_ids)
+            generation = model.generate(
+                input_ids=input_ids,
+                attention_mask=attention_mask,
+                prompt_input_ids=prompt_input_ids,
+                prompt_attention_mask=prompt_attention_mask
+            )
         
         audio_arr = generation.cpu().numpy().squeeze().astype(np.float32)
         dur = len(audio_arr) / sample_rate
