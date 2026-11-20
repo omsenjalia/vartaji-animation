@@ -42,6 +42,10 @@
     "prop": "none"
   },
   "voice": {
+    "engine": "indic-parler-tts",
+    "speaker": "Kalyanbhatt",
+    "prompt": "An elder Indian male scholar with a steady, humble, grave and devout tone speaks at a calm, moderate pace. The recording is very clear and close-up with pristine acoustic quality.",
+    "seed": 153502,
     "pitch": -4,
     "rate": -5
   },

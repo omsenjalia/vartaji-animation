@@ -1,0 +1,17 @@
+{
+  "id": "narrator",
+  "name": {
+    "hi": "कथाकार (पुष्टिमार्गीय)",
+    "en": "Satsang Narrator"
+  },
+  "kind": "narrator",
+  "seed": "narrator-1535",
+  "voice": {
+    "engine": "indic-parler-tts",
+    "speaker": "Narrator",
+    "prompt": "An elderly Indian male spiritual speaker delivers a sacred story with a deep, resonant, peaceful and meditative tone at a slow, measured pace. The speech is very clear, close-up with pristine acoustic quality and no background noise.",
+    "seed": 153500,
+    "pitch": -2,
+    "rate": -6
+  }
+}

@@ -42,6 +42,10 @@
     "prop": "manuscript"
   },
   "voice": {
+    "engine": "indic-parler-tts",
+    "speaker": "Gokulnathji",
+    "prompt": "An authoritative yet profoundly gentle elderly Indian male spiritual master with a calm, deep, reverent and resonant voice delivers a divine discourse at a slow, meditative pace. The recording is exceptionally clear, intimate and close-sounding with zero background noise.",
+    "seed": 153501,
     "pitch": -2,
     "rate": -8
   },

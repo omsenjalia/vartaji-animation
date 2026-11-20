@@ -40,6 +40,10 @@
     "prop": "brass-pot"
   },
   "voice": {
+    "engine": "indic-parler-tts",
+    "speaker": "Damodardas",
+    "prompt": "A mature Indian male devotee with a warm, earnest, heartfelt and affectionate voice speaks with deep devotion at a steady, measured pace. The recording is high-quality, clear and close-sounding.",
+    "seed": 147901,
     "pitch": -1,
     "rate": -3
   },

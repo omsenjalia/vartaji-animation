@@ -11,6 +11,7 @@
   "shots": [
     {
       "id": "s01",
+      "speaker": "narrator",
       "start": 0,
       "end": 6,
       "narration": "आधी रात हो चुकी थी। वार्ता अभी चल रही थी।",
@@ -22,6 +23,7 @@
     },
     {
       "id": "s02",
+      "speaker": "narrator",
       "start": 6,
       "end": 15,
       "narration": "श्रीगोकुलनाथजी चौरासी वैष्णवन की वार्ता कर रहे थे। कल्याणभट्ट और सब वैष्णव सुन रहे थे।",
@@ -33,6 +35,7 @@
     },
     {
       "id": "s03",
+      "speaker": "narrator",
       "start": 15,
       "end": 24,
       "narration": "वार्ता के रस में वे इतने डूब गये कि श्रीसुबोधिनी की कथा कहना भूल गये।",
@@ -44,6 +47,7 @@
     },
     {
       "id": "s04",
+      "speaker": "narrator",
       "start": 24,
       "end": 30,
       "narration": "रात ढल गई।",
@@ -55,9 +59,10 @@
     },
     {
       "id": "s05",
+      "speaker": "young-vaishnav",
       "start": 30,
       "end": 38,
-      "narration": "तब एक वैष्णवने पूछा — महाराजाधिराज, आज कथा कब कहोगे?",
+      "narration": "महाराजाधिराज, आज कथा कब कहोगे?",
       "caption": "कब कहोगे?",
       "visual": "The young Vaishnav leans forward from the back row, hands together. Heads turn toward him. His face stays in shadow.",
       "camera": "over-shoulder from the assembly toward the questioner",
@@ -66,6 +71,7 @@
     },
     {
       "id": "s06",
+      "speaker": "narrator",
       "start": 38,
       "end": 44,
       "narration": "आधी रात हो चुकी थी।",
@@ -77,9 +83,10 @@
     },
     {
       "id": "s07",
+      "speaker": "gokulnathji",
       "start": 44,
       "end": 56,
-      "narration": "तब श्रीगोकुलनाथजीने कहा — आज मैं कथाका फल कह रहा हूँ।",
+      "narration": "आज मैं कथाका फल कह रहा हूँ।",
       "caption": "कथाका फल",
       "visual": "First look at his eyes. He opens them and looks up. Warm light rises from the lamp and fills his face. The room brightens by a stop.",
       "camera": "slow push in to the eyes; first reveal of the face",
@@ -88,6 +95,7 @@
     },
     {
       "id": "s08",
+      "speaker": "gokulnathji",
       "start": 56,
       "end": 68,
       "narration": "सारा फल वैष्णव की बात में है। वैष्णव से बढ़कर और कोई पदार्थ नहीं है।",
@@ -99,6 +107,7 @@
     },
     {
       "id": "s09",
+      "speaker": "gokulnathji",
       "start": 68,
       "end": 78,
       "narration": "यह पुष्टिमार्ग है — वैष्णव के द्वारा ही फलित होता है।",
@@ -110,6 +119,7 @@
     },
     {
       "id": "s10",
+      "speaker": "gokulnathji",
       "start": 78,
       "end": 86,
       "narration": "श्रीआचार्यजीने भी कहा — दमला, ये मार्ग तेरे लिये प्रकट किया है। इसलिये वैष्णव की वार्ता सर्वोपरि है।",
@@ -121,6 +131,7 @@
     },
     {
       "id": "s11",
+      "speaker": "narrator",
       "start": 86,
       "end": 94,
       "narration": "तो चलिए शुरुआत करते हैं श्री दामोदरदास हरसानी वैष्णव की वार्ता १ वार्ता प्रसंग १ से... जय श्री कृष्ण!",

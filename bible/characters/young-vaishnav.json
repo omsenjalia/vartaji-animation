@@ -40,6 +40,10 @@
     "prop": "none"
   },
   "voice": {
+    "engine": "indic-parler-tts",
+    "speaker": "YoungVaishnav",
+    "prompt": "A youthful Indian male seeker speaks with eager reverence, humble curiosity and clarity at a moderate pace. The recording is clean, crisp and close-sounding.",
+    "seed": 153503,
     "pitch": 2,
     "rate": 0
   },

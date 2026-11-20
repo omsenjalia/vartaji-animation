@@ -55,10 +55,21 @@ Write `reels/v<NN>-p<MM>/treatment.md` defining:
 - **Visual Staging**: Environment (forest clearing, chowki, campfire, haveli, Yamuna bank, road).
 - **POV & Camera Grammar**: Distance, movement, intimate portrait moments.
 
-### Phase 3: Character Cast & Modeling
-1. Inspect `bible/characters/` for existing character models (`gokulnathji.json`, `damodardas.json`, `kalyanbhatt.json`, `young-vaishnav.json`).
+### Phase 3: Character Cast, Voice Design & Modeling
+1. Inspect `bible/characters/` for existing character models (`gokulnathji.json`, `damodardas.json`, `kalyanbhatt.json`, `young-vaishnav.json`, `narrator.json`).
 2. For any new character appearing in the prasang, create `bible/characters/<char_id>.json`:
-   - Follow the established schema (`id`, `name`, `appearance` with `skin`, `height`, `face`, `turban`, `upper`, `lower`, `shawl`, `tilak`, `mala`, `seed`).
+   - Visual Appearance: Follow schema (`id`, `name`, `appearance` with `skin`, `height`, `face`, `turban`, `upper`, `lower`, `shawl`, `tilak`, `mala`, `seed`).
+   - Voice Identity: Define deterministic `indic-parler-tts` voice profile:
+     ```json
+     "voice": {
+       "engine": "indic-parler-tts",
+       "speaker": "Name",
+       "prompt": "Natural language acoustic and tonal description (e.g. elderly Indian male spiritual speaker, calm, resonant, slow pace, close recording).",
+       "seed": 153501,
+       "pitch": -2,
+       "rate": -8
+     }
+     ```
    - Use authentic period color palettes (ochre, unbleached cotton, ivory, terracotta, cypress, sage).
 
 ### Phase 4: Script & Timed Captions
@@ -93,8 +104,15 @@ wsl -e bash -lc "cd '/mnt/c/Users/Om Senjalia/Desktop/vartaji animation' && GL=s
 wsl -e bash -lc "cd '/mnt/c/Users/Om Senjalia/Desktop/vartaji animation' && GL=swiftshader node engine/zach/render.mjs video reels/v<NN>-p<MM>/out.mp4"
 ```
 
-### Phase 7: Delivery & Review
-1. Provide clickable markdown file links (`file:///...`) to key stills and the generated `.mp4` video.
-2. When voiceover audio is provided:
-   `wsl -e bash -lc "cd '/mnt/c/Users/Om Senjalia/Desktop/vartaji animation' && node engine/zach/render.mjs mux reels/v<NN>-p<MM>/out.mp4 reels/v<NN>-p<MM>/audio/vo.mp4"`
-3. Update `production/tracker.csv` to record status: `✅ Completed`.
+### Phase 7: Deterministic Character Voice Synthesis & Muxing
+1. Synthesize multi-character voiceover using the local `ai4bharat/indic-parler-tts` engine in WSL:
+```bash
+wsl -e bash -lc "cd '/mnt/c/Users/Om Senjalia/Desktop/vartaji animation' && ~/.venvs/vartaji-tts/bin/python3 tools/generate_vo.py reels/v<NN>-p<MM>"
+```
+   - Automatically loads per-character voice descriptions and PyTorch seeds from `bible/characters/<char_id>.json`.
+   - Generates per-shot audio in `audio/shots/<shot_id>.wav` and stitches timeline-accurate `audio/vo.wav`.
+   - Automatically muxes with `out.mp4` via ffmpeg into `out_with_vo.mp4`.
+
+### Phase 8: Delivery & Review
+1. Provide clickable markdown file links (`file:///...`) to key stills, the master voiceover audio, and the final muxed video.
+2. Update `production/tracker.csv` to record status: `✅ Completed`.

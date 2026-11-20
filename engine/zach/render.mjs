@@ -63,7 +63,7 @@ if (mode === 'stills') {
   fs.mkdirSync(path.dirname(a), { recursive: true });
   const ff = spawn(FFMPEG, [
     '-y', '-v', 'error', '-f', 'image2pipe', '-framerate', String(fps),
-    '-c:v', 'png', '-i', '-', '-c:v', 'libx264', '-preset', 'medium',
+    '-c:v', 'png', '-i', '-', '-c:v', 'libx264', '-preset', 'fast',
     '-crf', '18', '-pix_fmt', 'yuv420p', '-r', String(fps), a,
   ], { stdio: ['pipe', 'inherit', 'inherit'] });
   const T0 = Date.now();
