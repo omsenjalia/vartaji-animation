@@ -65,6 +65,10 @@ Write `reels/v<NN>-p<MM>/treatment.md` defining:
 1. Write `reels/v<NN>-p<MM>/script.json`:
    - Total duration: 60–90 seconds.
    - 8–12 structured shots (`s01`, `s02`, ...), each with `start`, `end`, `narration`, `caption`, `visual`, `camera`, `sfx`.
+   - **Instagram Reel Outro Callout (Mandatory)**:
+     The final shot of every reel MUST conclude with the forward hook:
+     `तो चलिए शुरुआत करते हैं श्री {name} वैष्णव की वार्ता {number} वार्ता प्रसंग {number} से... जय श्री कृष्ण!`
+     (e.g. for v01-p01: `तो चलिए शुरुआत करते हैं श्री दामोदरदास हरसानी वैष्णव की वार्ता १ वार्ता प्रसंग २ से... जय श्री कृष्ण!`).
 2. Write `reels/v<NN>-p<MM>/narration_tts.txt` (clean Devanagari text for voiceover).
 3. Generate word-level aligned `reels/v<NN>-p<MM>/captions.json`:
    - 2–3 word phrase chunks timed accurately to the narration.

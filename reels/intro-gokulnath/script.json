@@ -5,7 +5,7 @@
   "title_en": "The Varta at Midnight",
   "archetype": "the-meeting",
   "motif": "oil lamp",
-  "duration": 88,
+  "duration": 94,
   "characters": ["gokulnathji", "kalyanbhatt", "young-vaishnav", "damodardas"],
   "voice": "single-narrator",
   "shots": [
@@ -111,12 +111,23 @@
     {
       "id": "s10",
       "start": 78,
-      "end": 88,
+      "end": 86,
       "narration": "श्रीआचार्यजीने भी कहा — दमला, ये मार्ग तेरे लिये प्रकट किया है। इसलिये वैष्णव की वार्ता सर्वोपरि है।",
       "caption": "वार्ता सर्वोपरि",
-      "visual": "Gokulnathji's hand comes to rest on the closed manuscript. The lamp flame in the same frame. One beat of silence after the last word.",
-      "camera": "static close, hand + manuscript + flame, hold",
-      "sfx": "tanpura fades; silence on the final beat",
+      "visual": "Gokulnathji's hand comes to rest on the closed manuscript. The lamp flame in the same frame.",
+      "camera": "static close, hand + manuscript + flame",
+      "sfx": "tanpura fades",
+      "sourceRef": "p2"
+    },
+    {
+      "id": "s11",
+      "start": 86,
+      "end": 94,
+      "narration": "तो चलिए शुरुआत करते हैं श्री दामोदरदास हरसानी वैष्णव की वार्ता १ वार्ता प्रसंग १ से... जय श्री कृष्ण!",
+      "caption": "जय श्री कृष्ण",
+      "visual": "Wide cinematic view of the sacred assembly under the moonlit Kadamba tree. Campfire glows warmly against the night sky as stars twinkle above.",
+      "camera": "slow pull back, warm campfire glow, holding on the peaceful assembly",
+      "sfx": "soft temple bell chime, tanpura resolves",
       "sourceRef": "p2"
     }
   ]

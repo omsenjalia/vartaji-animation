@@ -24,6 +24,7 @@ So:
 - ❌ No "इससे हमें यह सीख मिलती है" moral cards
 - ❌ No narrator-as-teacher, no labelling captions
 - ✅ One invisible spine only (cold open; one narrator voice; one motif object; the varta's own ending)
+- ✅ Instagram Outro Hook: Every reel ends with the forward callout hook: `तो चलिए शुरुआत करते हैं श्री {name} वैष्णव की वार्ता {number} वार्ता प्रसंग {number} से... जय श्री कृष्ण!`
 - ✅ Each prasang gets a **treatment sheet** before a script — structure, POV, motif, withholding, camera, ending come from the story
 - ✅ Reels are short films about people. Theology enters through what happens.
 
