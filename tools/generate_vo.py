@@ -36,6 +36,7 @@ def main():
     parser.add_argument("reel_dir", type=str, help="Path to reel directory, e.g. reels/intro-gokulnath")
     parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu", help="Device to run inference on (cuda/cpu)")
     parser.add_argument("--fp16", action="store_true", default=True, help="Use FP16 for reduced VRAM")
+    parser.add_argument("--token", type=str, default=os.environ.get("HF_TOKEN"), help="Hugging Face access token (hf_...)")
     args = parser.parse_args()
 
     reel_path = Path(args.reel_dir).resolve()
@@ -70,14 +71,16 @@ def main():
     model_name = "ai4bharat/indic-parler-tts"
     print(f"Loading model {model_name}...")
     
+    hf_token = args.token or os.environ.get("HF_TOKEN")
     torch_dtype = torch.float16 if (args.fp16 and args.device != "cpu") else torch.float32
     model = ParlerTTSForConditionalGeneration.from_pretrained(
         model_name,
-        torch_dtype=torch_dtype
+        torch_dtype=torch_dtype,
+        token=hf_token
     ).to(args.device)
 
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    description_tokenizer = AutoTokenizer.from_pretrained(model.config.text_encoder._name_or_path)
+    tokenizer = AutoTokenizer.from_pretrained(model_name, token=hf_token)
+    description_tokenizer = AutoTokenizer.from_pretrained(model.config.text_encoder._name_or_path, token=hf_token)
     sample_rate = model.config.sampling_rate
     print(f"Model loaded. Sample rate: {sample_rate} Hz")
 

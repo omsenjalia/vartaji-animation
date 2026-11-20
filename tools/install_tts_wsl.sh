@@ -11,9 +11,9 @@ if ! command -v "$UV_BIN" &> /dev/null; then
 fi
 echo "Using uv at: $UV_BIN"
 echo "Installing PyTorch with CUDA 12.4..."
-"$UV_BIN" pip install --python ~/.venvs/vartaji-tts/bin/python torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+UV_CONCURRENT_DOWNLOADS=2 UV_HTTP_TIMEOUT=300 "$UV_BIN" pip install --python ~/.venvs/vartaji-tts/bin/python torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 echo "Installing transformers, soundfile, sentencepiece, accelerate, and parler-tts..."
-"$UV_BIN" pip install --python ~/.venvs/vartaji-tts/bin/python transformers soundfile sentencepiece accelerate "git+https://github.com/huggingface/parler-tts.git"
+UV_HTTP_TIMEOUT=300 "$UV_BIN" pip install --python ~/.venvs/vartaji-tts/bin/python transformers soundfile sentencepiece accelerate "git+https://github.com/huggingface/parler-tts.git"
 echo "Verifying installation..."
 ~/.venvs/vartaji-tts/bin/python -c "import torch, parler_tts, transformers, soundfile; print('SUCCESS: PyTorch CUDA available:', torch.cuda.is_available(), 'Parler-TTS ready!')"
 echo "TTS_SETUP_COMPLETE"
