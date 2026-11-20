@@ -1,0 +1,23 @@
+{
+  "name": "vartaji-reels",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Animated reels of the 84 Vaishnav Varta in Vrajbhasha",
+  "type": "module",
+  "scripts": {
+    "index": "python3 tools/build_index.py",
+    "fonts": "bash tools/fetch_fonts.sh",
+    "render:stills": "node engine/zach/render.mjs stills",
+    "render:video": "node engine/zach/render.mjs video",
+    "render:long": "FORMAT=long node engine/zach/render.mjs video",
+    "assemble:long": "python3 tools/assemble_longform.py"
+  },
+  "dependencies": {
+    "@fontsource/baloo-2": "^5.3.0",
+    "@fontsource/google-sans": "^5.3.2",
+    "@fontsource/mukta": "^5.3.0",
+    "@fontsource/noto-sans-devanagari": "^5.3.0",
+    "playwright": "^1.49.0",
+    "three": "^0.171.0"
+  }
+}

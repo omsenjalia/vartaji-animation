@@ -1,0 +1,52 @@
+{
+  "id": "gokulnathji",
+  "name": {
+    "hi": "श्रीगोकुलनाथजी",
+    "en": "Gokulnathji"
+  },
+  "kind": "vaishnav",
+  "seed": "gokulnathji-1535",
+  "appearance": {
+    "skin": "#b87b4e",
+    "build": "slim",
+    "height": 1.72,
+    "face": {
+      "beard": "full",
+      "mustache": true,
+      "eyes": "almond",
+      "nose": "straight",
+      "eyeColor": "#1b120c"
+    },
+    "hair": "shaved",
+    "turban": {
+      "color": "#efe2c2",
+      "style": "vraj",
+      "layers": 4
+    },
+    "upper": {
+      "type": "jama",
+      "color": "#d8a23f"
+    },
+    "lower": {
+      "type": "dhoti",
+      "color": "#f1e7d1"
+    },
+    "shawl": {
+      "color": "#8d3f2c"
+    },
+    "tilak": {
+      "color": "#c8442a",
+      "shape": "urdhva"
+    },
+    "mala": "tulsi",
+    "prop": "manuscript"
+  },
+  "voice": {
+    "pitch": -2,
+    "rate": -8
+  },
+  "firstAppearance": "intro-gokulnath",
+  "appearances": [
+    "intro-gokulnath"
+  ]
+}

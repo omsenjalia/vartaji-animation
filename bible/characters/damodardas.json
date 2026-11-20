@@ -1,0 +1,51 @@
+{
+  "id": "damodardas",
+  "name": {
+    "hi": "दामोदरदास (दमला)",
+    "en": "Damodardas Harsani"
+  },
+  "kind": "vaishnav",
+  "seed": "damodardas-harsani-1479",
+  "appearance": {
+    "skin": "#b07a52",
+    "build": "stout",
+    "height": 1.68,
+    "face": {
+      "beard": "short-full",
+      "mustache": true,
+      "eyes": "broad",
+      "nose": "broad",
+      "eyeColor": "#1b120c"
+    },
+    "hair": "shaved",
+    "turban": {
+      "color": "#c8552f",
+      "style": "vraj",
+      "layers": 3
+    },
+    "upper": {
+      "type": "jama",
+      "color": "#c8552f"
+    },
+    "lower": {
+      "type": "dhoti",
+      "color": "#f2e6d0"
+    },
+    "shawl": null,
+    "tilak": {
+      "color": "#d9562f",
+      "shape": "urdhva"
+    },
+    "mala": "tulsi",
+    "prop": "brass-pot"
+  },
+  "voice": {
+    "pitch": -1,
+    "rate": -3
+  },
+  "firstAppearance": "intro-gokulnath",
+  "appearances": [
+    "intro-gokulnath",
+    "v01-p1"
+  ]
+}

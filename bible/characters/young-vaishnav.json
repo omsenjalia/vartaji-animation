@@ -1,0 +1,50 @@
+{
+  "id": "young-vaishnav",
+  "name": {
+    "hi": "एक वैष्णव",
+    "en": "A young Vaishnav"
+  },
+  "kind": "vaishnav",
+  "seed": "young-vaishnav-1535",
+  "appearance": {
+    "skin": "#b07a50",
+    "build": "slim",
+    "height": 1.7,
+    "face": {
+      "beard": "stubble",
+      "mustache": false,
+      "eyes": "large",
+      "nose": "straight",
+      "eyeColor": "#1b120c"
+    },
+    "hair": "short",
+    "turban": {
+      "color": "#dce6df",
+      "style": "simple",
+      "layers": 2
+    },
+    "upper": {
+      "type": "jama",
+      "color": "#5f9d70"
+    },
+    "lower": {
+      "type": "dhoti",
+      "color": "#e6dfcc"
+    },
+    "shawl": null,
+    "tilak": {
+      "color": "#c8442a",
+      "shape": "urdhva"
+    },
+    "mala": "tulsi",
+    "prop": "none"
+  },
+  "voice": {
+    "pitch": 2,
+    "rate": 0
+  },
+  "firstAppearance": "intro-gokulnath",
+  "appearances": [
+    "intro-gokulnath"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "v01-damodardas-harsani",
+  "title": "दामोदरदास हरसानी — सम्पूर्ण वार्ता",
+  "format": "longform",
+  "aspect": "16:9",
+  "resolution": [1920, 1080],
+  "targetRuntime": 600,
+  "coldOpen": {
+    "reel": "intro-gokulnath",
+    "note": "The midnight Gokulnathji story is the frame before every long-form episode of the 84."
+  },
+  "chapters": [
+    {
+      "n": 1,
+      "reel": "v01-p1",
+      "title": "दमला — नाम का भाव",
+      "sourcePages": [3, 8],
+      "archetype": "the-recognition"
+    },
+    {
+      "n": 2,
+      "reel": "v01-p2",
+      "title": "गोद में सिर",
+      "sourcePages": [9, 14],
+      "archetype": "the-test"
+    }
+  ],
+  "assets": {
+    "titleCard": "production/cards/v01-title.png",
+    "chapterCard": "production/cards/chapter-{n}.png",
+    "endCard": "production/cards/end.png",
+    "transition": "crossfade",
+    "transitionSeconds": 0.6
+  }
+}

@@ -1,0 +1,1012 @@
+{
+  "prasangs": [
+    {
+      "id": "v01-p1",
+      "vaishnav_id": "v01",
+      "part": 1,
+      "title": "दामोदरदास, जिनकों श्रीआचार्यजी 'दमला' कहते",
+      "pages": [
+        3,
+        14
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v02-p1",
+      "vaishnav_id": "v02",
+      "part": 1,
+      "title": "कृष्णदास मेघन ક્ષત્રી, सोरोंगें रहते",
+      "pages": [
+        15,
+        22
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v03-p1",
+      "vaishnav_id": "v03",
+      "part": 1,
+      "title": "दामोदरदास सम्भलवारे खत्री कन्नोजके वासी",
+      "pages": [
+        23,
+        36
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v04-p1",
+      "vaishnav_id": "v04",
+      "part": 1,
+      "title": "पद्मनाभदास कन्नोजिया कन्नौजके वासी",
+      "pages": [
+        37,
+        47
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v05-p1",
+      "vaishnav_id": "v05",
+      "part": 1,
+      "title": "पद्मनाभदासकी बेटी तुलसां",
+      "pages": [
+        48,
+        50
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v06-p1",
+      "vaishnav_id": "v06",
+      "part": 1,
+      "title": "पद्मनाभदासके बेटा ताकी बहू पारवती",
+      "pages": [
+        51,
+        52
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v07-p1",
+      "vaishnav_id": "v07",
+      "part": 1,
+      "title": "पद्मनाभदासके नाती, पारवतीका बेटा रघुनाथदास",
+      "pages": [
+        53,
+        55
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v08-p1",
+      "vaishnav_id": "v08",
+      "part": 1,
+      "title": "रजो ક્ષત્રાળી",
+      "pages": [
+        56,
+        57
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v09-p1",
+      "vaishnav_id": "v09",
+      "part": 1,
+      "title": "सेठ पुरुषोत्तमदास काशीमें रहते",
+      "pages": [
+        58,
+        72
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v10-p1",
+      "vaishnav_id": "v10",
+      "part": 1,
+      "title": "सेठ पुरुषोत्तमदासके बेटा गोपालदास",
+      "pages": [
+        73,
+        73
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v11-p1",
+      "vaishnav_id": "v11",
+      "part": 1,
+      "title": "रामदासजी सास्वत ब्राह्मण, पूरबमें रहते",
+      "pages": [
+        74,
+        79
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v12-p1",
+      "vaishnav_id": "v12",
+      "part": 1,
+      "title": "गदाधरदास कपिल सारस्वत ब्राह्मन, कडामें रहते",
+      "pages": [
+        80,
+        87
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v13-p1",
+      "vaishnav_id": "v13",
+      "part": 1,
+      "title": "बेनीदास माधवदास, दोऊ भाई ક્ષત્રી हते, कड़ामें रहते",
+      "pages": [
+        88,
+        92
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v14-p1",
+      "vaishnav_id": "v14",
+      "part": 1,
+      "title": "હરિવંશ पाठक सारस्वत ब्राह्मन कासीके, कड़ामें रहते",
+      "pages": [
+        93,
+        94
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v15-p1",
+      "vaishnav_id": "v15",
+      "part": 1,
+      "title": "गोविन्ददास भल्ला ક્ષત્રી, थानेश्वरमें रहते",
+      "pages": [
+        95,
+        100
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v16-p1",
+      "vaishnav_id": "v16",
+      "part": 1,
+      "title": "अम्मा क्षत्राणी, कड़ामें रहती",
+      "pages": [
+        101,
+        107
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v17-p1",
+      "vaishnav_id": "v17",
+      "part": 1,
+      "title": "नारायनदास ब्रह्मचारी, सारस्वत ब्राह्मन, महावनमें रहते",
+      "pages": [
+        108,
+        112
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v18-p1",
+      "vaishnav_id": "v18",
+      "part": 1,
+      "title": "एक ક્ષત્રાની, महावनमें रहती",
+      "pages": [
+        113,
+        117
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v19-p1",
+      "vaishnav_id": "v19",
+      "part": 1,
+      "title": "जीयदास सूरी ક્ષત્રી, आगरेमें रहते",
+      "pages": [
+        118,
+        119
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v20-p1",
+      "vaishnav_id": "v20",
+      "part": 1,
+      "title": "देवाकपूर ક્ષત્રી, જામે रहते",
+      "pages": [
+        120,
+        120
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v21-p1",
+      "vaishnav_id": "v21",
+      "part": 1,
+      "title": "दिनकर सेठ क्षत्री, प्रयागमें रहते",
+      "pages": [
+        121,
+        123
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v22-p1",
+      "vaishnav_id": "v22",
+      "part": 1,
+      "title": "दिनकरदास, मुकुन्ददास सहनिया कायस्थ, मालवा देसमें रहते",
+      "pages": [
+        124,
+        127
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v23-p1",
+      "vaishnav_id": "v23",
+      "part": 1,
+      "title": "प्रभुदास जलोटा ક્ષત્રી, सिंहनन्दके वासी",
+      "pages": [
+        128,
+        134
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v24-p1",
+      "vaishnav_id": "v24",
+      "part": 1,
+      "title": "प्रभुदास भाट, सिंहनन्दमें रहते",
+      "pages": [
+        135,
+        137
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v25-p1",
+      "vaishnav_id": "v25",
+      "part": 1,
+      "title": "पुरुषोत्तमदास स्त्री - पुरुष ક્ષત્રી हते, आगरेमें राजघाट पर रहते",
+      "pages": [
+        138,
+        140
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v26-p1",
+      "vaishnav_id": "v26",
+      "part": 1,
+      "title": "त्रिपुरदास कायस्थ, सेरगढ़के वासी",
+      "pages": [
+        141,
+        145
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v27-p1",
+      "vaishnav_id": "v27",
+      "part": 1,
+      "title": "पूरनमल, जेंबल ક્ષત્રી, अम्बालयमें रहते",
+      "pages": [
+        146,
+        150
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v28-p1",
+      "vaishnav_id": "v28",
+      "part": 1,
+      "title": "गुसांइदास सास्वत, मथुरामे रहते",
+      "pages": [
+        151,
+        152
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v29-p1",
+      "vaishnav_id": "v29",
+      "part": 1,
+      "title": "माधवभटट कास्मीरी, कास्मीरमें रहते",
+      "pages": [
+        153,
+        156
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v30-p1",
+      "vaishnav_id": "v30",
+      "part": 1,
+      "title": "गोपालदास, बांसबाडेके वासी",
+      "pages": [
+        157,
+        162
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v31-p1",
+      "vaishnav_id": "v31",
+      "part": 1,
+      "title": "पद्मारावल सांचोरा ब्राह्मन उज्जैनके",
+      "pages": [
+        163,
+        167
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v32-p1",
+      "vaishnav_id": "v32",
+      "part": 1,
+      "title": "पुरुषोत्तम जोसी सांचोरा, गुजरातके वासी",
+      "pages": [
+        168,
+        170
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v33-p1",
+      "vaishnav_id": "v33",
+      "part": 1,
+      "title": "जगन्नाथ जोसी खेरालूके",
+      "pages": [
+        171,
+        174
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v34-p1",
+      "vaishnav_id": "v34",
+      "part": 1,
+      "title": "जगन्नाथ जोसीकी माता, खेरालुमें रहती",
+      "pages": [
+        175,
+        177
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v35-p1",
+      "vaishnav_id": "v35",
+      "part": 1,
+      "title": "नरहरि जोसी, जगन्नाथ जोसीके भाई बड़े",
+      "pages": [
+        178,
+        181
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v36-p1",
+      "vaishnav_id": "v36",
+      "part": 1,
+      "title": "राना व्यास सांचोरा ब्राह्मन गोधराके वासी",
+      "pages": [
+        182,
+        188
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v37-p1",
+      "vaishnav_id": "v37",
+      "part": 1,
+      "title": "रामदास सांचोरो राजनगरके वासी",
+      "pages": [
+        189,
+        192
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v38-p1",
+      "vaishnav_id": "v38",
+      "part": 1,
+      "title": "गोविन्द दूबे सांचोरा, खेरालू गाममें रहते",
+      "pages": [
+        193,
+        199
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v39-p1",
+      "vaishnav_id": "v39",
+      "part": 1,
+      "title": "राजा दूबे, माधो दूबे, सांचोरा, मणुन्दमे रहते",
+      "pages": [
+        200,
+        205
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v40-p1",
+      "vaishnav_id": "v40",
+      "part": 1,
+      "title": "उत्तमश्लोकदास सांचोरा ब्राह्मन",
+      "pages": [
+        206,
+        206
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v41-p1",
+      "vaishnav_id": "v41",
+      "part": 1,
+      "title": "ईश्वर दूबे सांचोरा ब्राह्मन",
+      "pages": [
+        207,
+        208
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v42-p1",
+      "vaishnav_id": "v42",
+      "part": 1,
+      "title": "वासुदेव छकड़ा सारस्वत ब्राह्मन, सिंहनन्दके वासी",
+      "pages": [
+        209,
+        223
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v43-p1",
+      "vaishnav_id": "v43",
+      "part": 1,
+      "title": "जगतानन्द, सारस्वत ब्राह्मन, थानेश्वरमें रहते",
+      "pages": [
+        224,
+        227
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v44-p1",
+      "vaishnav_id": "v44",
+      "part": 1,
+      "title": "एक ब्राह्मणी अड़ेलमें रहती",
+      "pages": [
+        228,
+        229
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v45-p1",
+      "vaishnav_id": "v45",
+      "part": 1,
+      "title": "एक ક્ષત્રાની, सो प्रयागमें रहती",
+      "pages": [
+        230,
+        232
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v46-p1",
+      "vaishnav_id": "v46",
+      "part": 1,
+      "title": "सास - बहू, सासको नाम गोरजा और बहूको नाम समराई ક્ષત્રાની सिहनन्दमें रहती",
+      "pages": [
+        233,
+        235
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v47-p1",
+      "vaishnav_id": "v47",
+      "part": 1,
+      "title": "कृष्णदास श्रीरुकिमिनीजीकी खवासी करती",
+      "pages": [
+        236,
+        238
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v48-p1",
+      "vaishnav_id": "v48",
+      "part": 1,
+      "title": "बूला मिश्र पश्चिममें रहते, सो सारस्वत ब्राह्मण हते",
+      "pages": [
+        239,
+        243
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v49-p1",
+      "vaishnav_id": "v49",
+      "part": 1,
+      "title": "रामदास, मेवाड़ा ब्राह्मण, मीराबाईके प्रोहित हते, मेवाड़में रहते",
+      "pages": [
+        244,
+        245
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v50-p1",
+      "vaishnav_id": "v50",
+      "part": 1,
+      "title": "रामदास चौहान, रजपूत, बुदेलखण्डके वासी",
+      "pages": [
+        246,
+        248
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v51-p1",
+      "vaishnav_id": "v51",
+      "part": 1,
+      "title": "रामानन्द पण्डित, सास्वत ब्राह्मण, थानेश्वरके तिनको",
+      "pages": [
+        249,
+        254
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v52-p1",
+      "vaishnav_id": "v52",
+      "part": 1,
+      "title": "विष्णुदास છીપા, ये आगरेके पास गाम है तहां रहते",
+      "pages": [
+        255,
+        259
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v53-p1",
+      "vaishnav_id": "v53",
+      "part": 1,
+      "title": "जीवनदास ક્ષત્રી सिंहनन्दमें रहते",
+      "pages": [
+        260,
+        263
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v54-p1",
+      "vaishnav_id": "v54",
+      "part": 1,
+      "title": "भगवानदास सारस्वत ब्राह्मण हाजीपुरके",
+      "pages": [
+        264,
+        265
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v55-p1",
+      "vaishnav_id": "v55",
+      "part": 1,
+      "title": "भगवानदास सांचौरा ब्राह्मण",
+      "pages": [
+        266,
+        268
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v56-p1",
+      "vaishnav_id": "v56",
+      "part": 1,
+      "title": "अच्युतदास सनोढ़िया ब्राह्मण, मथुराके वासी",
+      "pages": [
+        269,
+        270
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v57-p1",
+      "vaishnav_id": "v57",
+      "part": 1,
+      "title": "अच्युतदास गौड़ ब्राह्मण, महावनके वासी",
+      "pages": [
+        271,
+        272
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v58-p1",
+      "vaishnav_id": "v58",
+      "part": 1,
+      "title": "अच्युतदास सारस्वत ब्राह्मण, सो कड़ामें रहते",
+      "pages": [
+        273,
+        277
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v59-p1",
+      "vaishnav_id": "v59",
+      "part": 1,
+      "title": "नारायणदास भाट मथुरामे रहते तिनको",
+      "pages": [
+        278,
+        279
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v60-p1",
+      "vaishnav_id": "v60",
+      "part": 1,
+      "title": "नारायणदास लुहाणा, ठटठाके बासी -",
+      "pages": [
+        280,
+        283
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v61-p1",
+      "vaishnav_id": "v61",
+      "part": 1,
+      "title": "एक क्षत्राणी सो वह अकेली सिंहनन्दमें रहती",
+      "pages": [
+        284,
+        288
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v62-p1",
+      "vaishnav_id": "v62",
+      "part": 1,
+      "title": "दामोदरदास कायस्थकी माता, वाको नाम वीरबाईसो सेरगढ़में रहती",
+      "pages": [
+        289,
+        292
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v63-p1",
+      "vaishnav_id": "v63",
+      "part": 1,
+      "title": "दोऊ स्त्री पुरुष ક્ષત્રી सिंहनन्दके वासी",
+      "pages": [
+        293,
+        296
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v64-p1",
+      "vaishnav_id": "v64",
+      "part": 1,
+      "title": "एक सुतार खाती घरको काम करतो, सो अड़ेलमें रहतो",
+      "pages": [
+        297,
+        298
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v65-p1",
+      "vaishnav_id": "v65",
+      "part": 1,
+      "title": "एक ક્ષત્રી हतो. सो पूर्वमे रहतो पटनाके चारि मजलि आगे, તા क्षत्रिकों एक अन्यमार्गीयसों सङ्ग હો",
+      "pages": [
+        299,
+        301
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v66-p1",
+      "vaishnav_id": "v66",
+      "part": 1,
+      "title": "लघु पुरुषोत्तमदास ક્ષત્રી कवी हते, सो कासीमें रहते",
+      "pages": [
+        302,
+        302
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v67-p1",
+      "vaishnav_id": "v67",
+      "part": 1,
+      "title": "कविराज भाट, सनोडिया ब्राह्मण, मथुरामे रहते",
+      "pages": [
+        303,
+        304
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v68-p1",
+      "vaishnav_id": "v68",
+      "part": 1,
+      "title": "गोपालदास ईटोडा ક્ષત્રી, सो ये पच्छिममे पंजाबमें रहते",
+      "pages": [
+        305,
+        308
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v69-p1",
+      "vaishnav_id": "v69",
+      "part": 1,
+      "title": "जनार्दनदास चोपड़ा क्षत्री थानेश्वरके वासी",
+      "pages": [
+        309,
+        310
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v70-p1",
+      "vaishnav_id": "v70",
+      "part": 1,
+      "title": "गडू स्वामी सनोढ़िया ब्राह्मण, श्रीवृन्दावनमें रहते",
+      "pages": [
+        311,
+        317
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v71-p1",
+      "vaishnav_id": "v71",
+      "part": 1,
+      "title": "नरहरदास गोडिया ब्राह्मण, बंगालाके",
+      "pages": [
+        318,
+        320
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v72-p1",
+      "vaishnav_id": "v72",
+      "part": 1,
+      "title": "नरहर सन्यासी गौड़ ब्राह्मण, आगरे તેં गुजरात ગાયન इनको पिता રો",
+      "pages": [
+        321,
+        323
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v73-p1",
+      "vaishnav_id": "v73",
+      "part": 1,
+      "title": "सदू पाण्डे, सदू पाण्डेकी बहू भवानी ओर સહ્‌ पाण्डेकी बेटी नरो",
+      "pages": [
+        324,
+        329
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v74-p1",
+      "vaishnav_id": "v74",
+      "part": 1,
+      "title": "गोपालदास, जटाधारी गौड ब्राह्मण प्रयागके",
+      "pages": [
+        330,
+        333
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v75-p1",
+      "vaishnav_id": "v75",
+      "part": 1,
+      "title": "कृष्णदास ओर उनकी स्त्री, गुजराती ब्राह्मण, सो गुजरातमें વાડ चोइला गाम, सो વાડે સહે",
+      "pages": [
+        334,
+        337
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v76-p1",
+      "vaishnav_id": "v76",
+      "part": 1,
+      "title": "सन्तदास चोपड़ा ક્ષત્રી, आगरेमें सेऊके बजार पास घर હતો तहां रहते",
+      "pages": [
+        338,
+        343
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v77-p1",
+      "vaishnav_id": "v77",
+      "part": 1,
+      "title": "सुन्दरदास, मोधोदास, गङ्गापुतर ब्राह्मण हते, सो जगन्नाथरायजीसों कोस दस उरे एक गाममे रहते, તા गामको नाम पीपरीं है, तह रहते",
+      "pages": [
+        344,
+        348
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v78-p1",
+      "vaishnav_id": "v78",
+      "part": 1,
+      "title": "मावजी पटेल ओर इनकी स्त्री बिरजो, ये उज्जनमें रहते",
+      "pages": [
+        349,
+        351
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v79-p1",
+      "vaishnav_id": "v79",
+      "part": 1,
+      "title": "गोपालदास ક્ષત્રી, पश्चिममें रहते",
+      "pages": [
+        352,
+        356
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v80-p1",
+      "vaishnav_id": "v80",
+      "part": 1,
+      "title": "बादरायनदास, पुष्करना ब्राह्मण स्त्री, पुरुष, सो मोरबीमें रहते",
+      "pages": [
+        357,
+        357
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v81-p1",
+      "vaishnav_id": "v81",
+      "part": 1,
+      "title": "सूरदासजी सारस्वत ब्राह्मण, दिल्लीके पास सींहीं गाम है तहां रहते",
+      "pages": [
+        358,
+        419
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v82-p1",
+      "vaishnav_id": "v82",
+      "part": 1,
+      "title": "परमानन्दस्वामी, कनौजिया ब्राह्मण कनौजमें रहते, जिनके पद પર્વત દે अष्टछापमें",
+      "pages": [
+        420,
+        474
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v83-p1",
+      "vaishnav_id": "v83",
+      "part": 1,
+      "title": "कुम्भनदासजी गोरवा ક્ષત્રી, जमुनावतेमें रहते, जिनके पद अष्टछापमें गाइयत है",
+      "pages": [
+        475,
+        522
+      ],
+      "archetype": null,
+      "status": "indexed"
+    },
+    {
+      "id": "v84-p1",
+      "vaishnav_id": "v84",
+      "part": 1,
+      "title": "कृष्णदास अधिकारी, सो ये अष्टछापमें जिनके पद गाइयत हैं",
+      "pages": [
+        523,
+        564
+      ],
+      "archetype": null,
+      "status": "indexed"
+    }
+  ]
+}

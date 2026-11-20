@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<title>Vartaji — 3D Renderer v2</title>
+<style>
+  @font-face {
+    font-family: 'Vraj';
+    src: url('/node_modules/@fontsource/noto-sans-devanagari/files/noto-sans-devanagari-devanagari-800-normal.woff2') format('woff2');
+    font-weight: 800; font-display: block;
+  }
+  @font-face {
+    font-family: 'Vraj';
+    src: url('/node_modules/@fontsource/noto-sans-devanagari/files/noto-sans-devanagari-devanagari-600-normal.woff2') format('woff2');
+    font-weight: 600; font-display: block;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; background: #000; overflow: hidden; }
+  #stage { position: absolute; inset: 0; }
+  canvas { display: block; width: 100%; height: 100%; }
+  #vignette {
+    position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(ellipse at 50% 44%, rgba(0,0,0,0) 42%, rgba(0,0,0,.45) 100%);
+  }
+  #caption {
+    position: absolute; left: 50%; bottom: 17%; transform: translateX(-50%);
+    width: 92%; text-align: center; pointer-events: none;
+    font-family: 'Vraj', 'Noto Sans Devanagari', sans-serif;
+    font-weight: 800; font-size: 52px; line-height: 1.15; white-space: nowrap;
+    color: #fff6e2; letter-spacing: -0.01em;
+    text-shadow:
+      0 2px 0 rgba(40,16,8,.95),
+      0 4px 8px rgba(0,0,0,.7),
+      0 8px 24px rgba(0,0,0,.55),
+      0 0 40px rgba(255,160,60,.12);
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+  #caption.on { opacity: 1; }
+  #caption.section {
+    font-size: 42px; font-weight: 600; color: #ffd98a;
+    text-shadow: 0 2px 0 rgba(40,16,8,.9), 0 8px 24px rgba(0,0,0,.85);
+  }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "/node_modules/three/build/three.module.js",
+    "three/addons/": "/node_modules/three/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="stage"></div>
+  <div id="vignette"></div>
+  <div id="caption"></div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

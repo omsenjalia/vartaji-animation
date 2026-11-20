@@ -1,0 +1,52 @@
+{
+  "id": "kalyanbhatt",
+  "name": {
+    "hi": "कल्याणभट्ट",
+    "en": "Kalyanbhatt"
+  },
+  "kind": "vaishnav",
+  "seed": "kalyanbhatt-1535",
+  "appearance": {
+    "skin": "#c08a5c",
+    "build": "stout",
+    "height": 1.66,
+    "face": {
+      "beard": "grey-full",
+      "mustache": true,
+      "eyes": "narrow",
+      "nose": "broad",
+      "eyeColor": "#1b120c"
+    },
+    "hair": "shaved",
+    "turban": {
+      "color": "#d9d3c4",
+      "style": "vraj",
+      "layers": 3
+    },
+    "upper": {
+      "type": "jama",
+      "color": "#b9a98a"
+    },
+    "lower": {
+      "type": "dhoti",
+      "color": "#efe8d8"
+    },
+    "shawl": {
+      "color": "#c8bca6"
+    },
+    "tilak": {
+      "color": "#b8402a",
+      "shape": "urdhva"
+    },
+    "mala": "tulsi",
+    "prop": "none"
+  },
+  "voice": {
+    "pitch": -4,
+    "rate": -5
+  },
+  "firstAppearance": "intro-gokulnath",
+  "appearances": [
+    "intro-gokulnath"
+  ]
+}

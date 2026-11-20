@@ -1,0 +1,123 @@
+{
+  "id": "intro-gokulnath",
+  "number": "intro",
+  "title": "आधी रात की वार्ता",
+  "title_en": "The Varta at Midnight",
+  "archetype": "the-meeting",
+  "motif": "oil lamp",
+  "duration": 88,
+  "characters": ["gokulnathji", "kalyanbhatt", "young-vaishnav", "damodardas"],
+  "voice": "single-narrator",
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 6,
+      "narration": "आधी रात हो चुकी थी। वार्ता अभी चल रही थी।",
+      "caption": "आधी रात",
+      "visual": "Extreme close on a brass oil lamp wick. It gutters. Behind it, out of focus, voices. A hand enters and steadies the lamp.",
+      "camera": "static extreme close, shallow focus",
+      "sfx": "wick-crackle, low room tone",
+      "sourceRef": "p2"
+    },
+    {
+      "id": "s02",
+      "start": 6,
+      "end": 15,
+      "narration": "श्रीगोकुलनाथजी चौरासी वैष्णवन की वार्ता कर रहे थे। कल्याणभट्ट और सब वैष्णव सुन रहे थे।",
+      "caption": "चौरासी वैष्णवन की वार्ता",
+      "visual": "Slow tilt down from the lamp to a seated semicircle. Gokulnathji on a chowki, gesturing. Kalyanbhatt beside him. Twelve figures in shadow beyond.",
+      "camera": "slow tilt down, 12 figures suggested not counted",
+      "sfx": "low murmur of an assembly",
+      "sourceRef": "p2"
+    },
+    {
+      "id": "s03",
+      "start": 15,
+      "end": 24,
+      "narration": "वार्ता के रस में वे इतने डूब गये कि श्रीसुबोधिनी की कथा कहना भूल गये।",
+      "caption": "रस में डूबे",
+      "visual": "Gokulnathji's profile, eyes half closed, a faint smile. Lamp light from below. The manuscript lies forgotten, open, at his knee.",
+      "camera": "locked profile, lamp-lit from below",
+      "sfx": "murmur thins out",
+      "sourceRef": "p2"
+    },
+    {
+      "id": "s04",
+      "start": 24,
+      "end": 30,
+      "narration": "रात ढल गई।",
+      "caption": "कथा भूल गई",
+      "visual": "Shadows stretch across the floor. The lamp burns low. The open manuscript's pages lift in a faint draught.",
+      "camera": "static wide-low on the floor, shadows moving",
+      "sfx": "page flutter, distant cricket",
+      "sourceRef": "p2"
+    },
+    {
+      "id": "s05",
+      "start": 30,
+      "end": 38,
+      "narration": "तब एक वैष्णवने पूछा — महाराजाधिराज, आज कथा कब कहोगे?",
+      "caption": "कब कहोगे?",
+      "visual": "The young Vaishnav leans forward from the back row, hands together. Heads turn toward him. His face stays in shadow.",
+      "camera": "over-shoulder from the assembly toward the questioner",
+      "sfx": "a single voice in the quiet",
+      "sourceRef": "p2"
+    },
+    {
+      "id": "s06",
+      "start": 38,
+      "end": 44,
+      "narration": "आधी रात हो चुकी थी।",
+      "caption": "आधी रात गई",
+      "visual": "Silence. Gokulnathji's hands resting on his knees. The lamp flame steadies — the wick sound stops.",
+      "camera": "tight on hands, everything else black",
+      "sfx": "silence; wick motif cuts out",
+      "sourceRef": "p2"
+    },
+    {
+      "id": "s07",
+      "start": 44,
+      "end": 56,
+      "narration": "तब श्रीगोकुलनाथजीने कहा — आज मैं कथाका फल कह रहा हूँ।",
+      "caption": "कथाका फल",
+      "visual": "First look at his eyes. He opens them and looks up. Warm light rises from the lamp and fills his face. The room brightens by a stop.",
+      "camera": "slow push in to the eyes; first reveal of the face",
+      "sfx": "single tanpura note enters",
+      "sourceRef": "p2"
+    },
+    {
+      "id": "s08",
+      "start": 56,
+      "end": 68,
+      "narration": "सारा फल वैष्णव की बात में है। वैष्णव से बढ़कर और कोई पदार्थ नहीं है।",
+      "caption": "फल वैष्णवकी वातमें",
+      "visual": "The camera drifts across listening faces — Kalyanbhatt, an old woman, a potter, a Kshatri — each lit for a moment by the same lamp.",
+      "camera": "slow lateral drift, one face at a time",
+      "sfx": "tanpura drone under narration",
+      "sourceRef": "p2"
+    },
+    {
+      "id": "s09",
+      "start": 68,
+      "end": 78,
+      "narration": "यह पुष्टिमार्ग है — वैष्णव के द्वारा ही फलित होता है।",
+      "caption": "यह पुष्टिमार्ग",
+      "visual": "The lamp flame reflected in a brass vessel. In the reflection, not the room: a single devotee's bowed head. For one beat, Damodardas's silhouette in the back row.",
+      "camera": "macro on the reflection, then a half-beat cut to the back row",
+      "sfx": "tanpura, a soft metallic ring",
+      "sourceRef": "p2"
+    },
+    {
+      "id": "s10",
+      "start": 78,
+      "end": 88,
+      "narration": "श्रीआचार्यजीने भी कहा — दमला, ये मार्ग तेरे लिये प्रकट किया है। इसलिये वैष्णव की वार्ता सर्वोपरि है।",
+      "caption": "वार्ता सर्वोपरि",
+      "visual": "Gokulnathji's hand comes to rest on the closed manuscript. The lamp flame in the same frame. One beat of silence after the last word.",
+      "camera": "static close, hand + manuscript + flame, hold",
+      "sfx": "tanpura fades; silence on the final beat",
+      "sourceRef": "p2"
+    }
+  ]
+}
