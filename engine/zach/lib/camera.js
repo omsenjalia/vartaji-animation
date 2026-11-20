@@ -5,7 +5,7 @@ import { smooth, range, easeInOut, cameraShake, lerp } from './math.js';
 // Shot configs for intro-gokulnath scene layout.
 // p = position, l = lookAt, f = FOV, plus per-shot modifiers.
 const SHOTS = {
-  s01: { p: [0, 8.0, 6.5],    l: [0, 0.3, 0],       f: 50, descend: 6.6 },
+  s01: { p: [0, 8.0, 6.5],    l: [0, 0.3, 0],       f: 50, descend: 3.5 },
   s02: { p: [0, 2.0, 5.4],    l: [0, 0.85, -0.4],    f: 50, tilt: 0.5 },
   s03: { p: [-1.10, 1.48, 0.45], l: [0, 1.52, -1.55], f: 38, push: 0.005 },
   s04: { p: [0.7, 0.62, 1.55], l: [0, 0.27, 0.3],    f: 40, push: 0.004 },
@@ -56,9 +56,9 @@ export function createCameraSystem(camera, refs) {
       // ─── Shot-specific overrides ───────────────────
       if (shot.id === 's08') {
         // Face-by-face drift — smooth blend between assembly members
-        const faceIdx = lt < 4 ? 2 : lt < 8 ? 5 : 8;
-        const nextIdx = lt < 4 ? 2 : lt < 8 ? 5 : 8;
-        const faceT = lt < 4 ? lt / 4 : lt < 8 ? (lt - 4) / 4 : (lt - 8) / 4;
+        const third = dur / 3;
+        const faceIdx = lt < third ? 2 : lt < third * 2 ? 5 : 8;
+        const faceT = lt < third ? lt / third : lt < third * 2 ? (lt - third) / third : (lt - third * 2) / third;
         if (assembly[faceIdx]) {
           assembly[faceIdx].getWorldPosition(tmpVec); tmpVec.y += 1.0;
           px = lerp(tmpVec.x * 0.35, tmpVec.x * 0.35, smooth(faceT));
@@ -69,7 +69,7 @@ export function createCameraSystem(camera, refs) {
         }
       }
 
-      if (shot.id === 's09' && t >= 72) {
+      if (shot.id === 's09' && lt >= dur * 0.45) {
         if (damodarRow) {
           damodarRow.getWorldPosition(tmpVec); tmpVec.y += 1.0;
           px = tmpVec.x + 1.2; py = tmpVec.y + 0.3; pz = tmpVec.z + 1.7;
@@ -85,7 +85,7 @@ export function createCameraSystem(camera, refs) {
       // ─── Apply ─────────────────────────────────────
       camera.position.set(px, py, pz);
       camera.lookAt(lx, ly, lz);
-      if (!['s08', 's09'].includes(shot.id) || (shot.id === 's09' && t < 72)) {
+      if (!['s08', 's09'].includes(shot.id) || (shot.id === 's09' && lt < dur * 0.45)) {
         camera.fov = cfg.f;
       }
       camera.updateProjectionMatrix();

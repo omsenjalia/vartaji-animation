@@ -1,0 +1,5 @@
+import torch
+print("CUDA available:", torch.cuda.is_available())
+if torch.cuda.is_available():
+    print("Device name:", torch.cuda.get_device_name(0))
+    print("Device memory (GB):", torch.cuda.get_device_properties(0).total_memory / 1024**3)

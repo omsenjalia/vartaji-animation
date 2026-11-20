@@ -9,7 +9,7 @@ export function createCaptionSystem(el, capsData) {
     update(t, shot) {
       const lt = t - shot.start;
       const dur = shot.end - shot.start;
-      const inShot = lt > 0.1 && lt < dur - 0.1;
+      const inShot = lt > 0.04 && lt < dur - 0.04;
 
       // Find the active caption (use the latest-starting one to resolve overlaps)
       let cap = null;

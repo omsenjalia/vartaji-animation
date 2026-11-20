@@ -9,7 +9,10 @@ reels/**/frames/
 reels/**/chunks/
 reels/**/final*.mp4
 reels/**/audio/*.wav
+reels/**/audio/**/*.wav
 reels/**/audio/shots/
+tools/VibeVoice/
+tools/voice_candidates/
 
 # Logs
 *.log

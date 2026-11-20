@@ -70,7 +70,7 @@ export function createAnimationSystem(gokul, kalyan, assembly, questioner, damod
 
       // s05: questioner leans forward
       if (shot.id === 's05') {
-        const lean = smooth(range(lt, 0, 3.5));
+        const lean = smooth(range(lt, 0, dur * 0.7));
         questioner.rotation.z = -0.065 * lean;
         questioner.position.x = questioner.position.x - lean * 0.001;
       } else {
@@ -80,7 +80,7 @@ export function createAnimationSystem(gokul, kalyan, assembly, questioner, damod
       // Clear assembly for intimate shots
       const clearRow = ['s06', 's09', 's10'].includes(shot.id);
       assembly.forEach(a => { a.visible = !clearRow; });
-      if (shot.id === 's09' && t >= 72) damodarRow.visible = true;
+      if (shot.id === 's09' && lt >= dur * 0.45) damodarRow.visible = true;
 
       // ─── Character breathing ───────────────────────
       const breathe = 1 + Math.sin(t * 1.9) * 0.01;
@@ -101,7 +101,7 @@ export function createAnimationSystem(gokul, kalyan, assembly, questioner, damod
 
       // ─── Head motion — responsive to narrative ─────
       // In shot 3, head turns slightly toward the camera/campfire profile
-      const s03Turn = shot.id === 's03' ? -0.32 : (t > 30 && t < 44 ? 0.05 : 0);
+      const s03Turn = shot.id === 's03' ? -0.32 : (['s05', 's06'].includes(shot.id) ? 0.05 : 0);
       const gokulHead = gokul.userData.head;
       gokulHead.rotation.y = noise3D(t * 0.3, 0, 10) * 0.04 + s03Turn
         + (shot.id === 's07' ? noise3D(t * 0.5, 0, 20) * 0.02 : 0); // animated during answer

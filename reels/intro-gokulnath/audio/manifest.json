@@ -1,0 +1,83 @@
+{
+  "engine": "edge-neural",
+  "sample_rate": 24000,
+  "shots": [
+    {
+      "id": "s01",
+      "speaker": "narrator",
+      "duration": 5.928,
+      "start": 0.0,
+      "end": 6.0
+    },
+    {
+      "id": "s02",
+      "speaker": "narrator",
+      "duration": 9.36,
+      "start": 6.0,
+      "end": 15.0
+    },
+    {
+      "id": "s03",
+      "speaker": "narrator",
+      "duration": 6.792,
+      "start": 15.0,
+      "end": 24.0
+    },
+    {
+      "id": "s04",
+      "speaker": "narrator",
+      "duration": 2.28,
+      "start": 24.0,
+      "end": 30.0
+    },
+    {
+      "id": "s05",
+      "speaker": "young-vaishnav",
+      "duration": 3.6,
+      "start": 30.0,
+      "end": 38.0
+    },
+    {
+      "id": "s06",
+      "speaker": "narrator",
+      "duration": 2.904,
+      "start": 38.0,
+      "end": 44.0
+    },
+    {
+      "id": "s07",
+      "speaker": "gokulnathji",
+      "duration": 3.744,
+      "start": 44.0,
+      "end": 56.0
+    },
+    {
+      "id": "s08",
+      "speaker": "gokulnathji",
+      "duration": 9.48,
+      "start": 56.0,
+      "end": 68.0
+    },
+    {
+      "id": "s09",
+      "speaker": "gokulnathji",
+      "duration": 5.88,
+      "start": 68.0,
+      "end": 78.0
+    },
+    {
+      "id": "s10",
+      "speaker": "gokulnathji",
+      "duration": 11.736,
+      "start": 78.0,
+      "end": 86.0
+    },
+    {
+      "id": "s11",
+      "speaker": "narrator",
+      "duration": 10.824,
+      "start": 86.0,
+      "end": 94.0
+    }
+  ]
+}
